@@ -1,10 +1,4 @@
-import {
-  Form,
-  Links,
-  Meta,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+import { Form, Links, Meta, Scripts, ScrollRestoration } from '@remix-run/react'
 
 export default function App() {
   return (
@@ -20,13 +14,7 @@ export default function App() {
           <h1>Remix Contacts</h1>
           <div>
             <Form id="search-form" role="search">
-              <input
-                id="q"
-                aria-label="Search contacts"
-                placeholder="Search"
-                type="search"
-                name="q"
-              />
+              <input id="q" aria-label="Search contacts" placeholder="Search" type="search" name="q" />
               <div id="search-spinner" aria-hidden hidden={true} />
             </Form>
             <Form method="post">
@@ -49,5 +37,5 @@ export default function App() {
         <Scripts />
       </body>
     </html>
-  );
+  )
 }
