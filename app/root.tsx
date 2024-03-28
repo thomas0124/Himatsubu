@@ -1,12 +1,12 @@
 import { Links, Meta, Scripts, ScrollRestoration } from '@remix-run/react'
 import type { LinksFunction } from '@remix-run/node'
-import styles from '../tailwind.css'
+import stylesheet from '~/tailwind.css?url'
 
-export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }]
+export const links: LinksFunction = () => [{ rel: 'stylesheet', href: stylesheet }]
 
 export default function App() {
   return (
-    <html lang="en">
+    <html lang="ja">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,10 +14,6 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div className="flex">
-          <p>test1</p>
-          <p>test2</p>
-        </div>
         <ScrollRestoration />
         <Scripts />
       </body>

@@ -28,6 +28,7 @@ ex) feat/add_login
 ## Stacks
 - Remix
 - TypeScript
+- TailwindCSS
 - husky
 - ESLint
 - Prettier
